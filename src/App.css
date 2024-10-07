@@ -1,0 +1,15 @@
+.scroll-section {
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* Hide scrollbar for webkit browsers (Chrome, Safari) */
+.scroll-section::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Enable smooth scrolling */
+.scroll-section {
+  scroll-behavior: smooth; /* Smooth scroll behavior */
+}
