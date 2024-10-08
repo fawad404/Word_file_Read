@@ -389,7 +389,7 @@ const QuizFromWord = () => {
                         <div className="py-2 flex justify-center bg-blue-100 items-center border border-y-2 border-y-gray-300">
                             <h3 className="font-bold mb-2 text-gray-500">SECTION: Reasoning Ability</h3>
                         </div>
-                        <div className="grid grid-cols-5 gap-2 mt-4 overflow-y-scroll scroll-section">
+                        <div className="grid grid-cols-5 gap-2 mt-4">
                             {questions.map((_, index) => (
                                 <button
                                     key={index}

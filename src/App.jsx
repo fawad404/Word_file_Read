@@ -1,9 +1,15 @@
 import React from 'react'
 import QuizFromWord from './componets/word-extrector'
+import Topbar from './componets/topbar'
+import PerformanceSummary from './componets/result'
 
 const App = () => {
   return (
-    <QuizFromWord />
+    <>
+    <Topbar />
+    <PerformanceSummary />
+     {/* <QuizFromWord /> */}
+    </>
   )
 }
 
