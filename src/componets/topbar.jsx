@@ -21,34 +21,34 @@ const Topbar = () => {
 
             {/* Right Side */}
             <div className="flex items-center space-x-4 gap-6">
-                
-            <div className="flex items-center space-x-2 bg-gray-200 px-4 py-2 rounded-md max-sm:px-2 max-sm:py-1">
-    <span className="text-sm text-gray-500 max-sm:text-xs">Rate the Test</span>
-    <div className="flex space-x-1">
-        {[...Array(5)].map((star, index) => {
-            const ratingValue = index + 1;
 
-            return (
-                <label key={index}>
-                    <input
-                        type="radio"
-                        name="rating"
-                        value={ratingValue}
-                        onClick={() => setRating(ratingValue)}
-                        className="hidden"
-                    />
-                    <FaStar
-                        className={`cursor-pointer transition duration-200 ${ratingValue <= (hover || rating) ? 'text-yellow-500' : 'text-gray-300'
-                            }`}
-                        size={ratingValue <= (hover || rating) ? 20 : 18} // Make star size responsive
-                        onMouseEnter={() => setHover(ratingValue)}
-                        onMouseLeave={() => setHover(null)}
-                    />
-                </label>
-            );
-        })}
-    </div>
-</div>
+                <div className="flex items-center space-x-2 bg-gray-200 px-4 py-2 rounded-md max-sm:px-2 max-sm:py-1">
+                    <span className="text-sm text-gray-500 max-sm:text-xs">Rate the Test</span>
+                    <div className="flex space-x-1">
+                        {[...Array(5)].map((star, index) => {
+                            const ratingValue = index + 1;
+
+                            return (
+                                <label key={index}>
+                                    <input
+                                        type="radio"
+                                        name="rating"
+                                        value={ratingValue}
+                                        onClick={() => setRating(ratingValue)}
+                                        className="hidden"
+                                    />
+                                    <FaStar
+                                        className={`cursor-pointer transition duration-200 ${ratingValue <= (hover || rating) ? 'text-yellow-500' : 'text-gray-300'
+                                            }`}
+                                        size={ratingValue <= (hover || rating) ? 20 : 18} // Make star size responsive
+                                        onMouseEnter={() => setHover(ratingValue)}
+                                        onMouseLeave={() => setHover(null)}
+                                    />
+                                </label>
+                            );
+                        })}
+                    </div>
+                </div>
 
                 <div className="flex items-center space-x-2 max-sm:hidden">
                     <button className="text-sm text-cyan-500 hover:underline">Go to Tests</button>

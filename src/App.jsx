@@ -6,9 +6,9 @@ import PerformanceSummary from './componets/result'
 const App = () => {
   return (
     <>
-    <Topbar />
-    <PerformanceSummary />
-     {/* <QuizFromWord /> */}
+    {/* <Topbar />
+    <PerformanceSummary /> */}
+     <QuizFromWord />
     </>
   )
 }
